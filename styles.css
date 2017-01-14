@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+}
+
+.custom-nav {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 25%;
+
+}
+
+.nav-container {
+    width: 400px;
+    height: 100%;
+
+    margin: auto;
+    /*border: 1px solid black;*/
+    position: relative;
+    transform: rotate(270deg);
+}
+
+
+
+
+
+
+/*nav blocks*/
+
+.nav-block {
+    width: 20%;
+    height: 50%;
+    /*border: 1px solid red;*/
+    position: relative;
+    text-align: center;
+    font-family: Arial sans-serif;
+    font-size: 50px ;
+}
+
+#nav-block-1 {
+    animation: figure-8 4s linear 0s infinite ;
+}
+
+#nav-block-1-b {
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid blue;*/
+    animation: spin 1s linear 0s infinite ;
+}
+
+
+
+
+#nav-block-2 {
+
+    animation: figure-8 4s linear 0.5s infinite  ;
+}
+
+#nav-block-2-b {
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid blue;*/
+    animation: spin 2s linear 0s infinite ;
+}
+
+
+
+#nav-block-3 {
+    animation: figure-8 4s linear 1s infinite  ;
+}
+
+#nav-block-3-b {
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid blue;*/
+    animation: spin 3s linear 0s infinite ;
+}
+
+
+
+#nav-block-4 {
+    animation: figure-8 4s linear 1.5s infinite  ;
+}
+
+#nav-block-4-b {
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid blue;*/
+    animation: spin 4s linear 0s infinite ;
+}
+
+
+
+
+
+
+/* The animation code */
+@keyframes figure-8 {
+    0%   {top: -50%; left: 20% }
+    25% { top: 100%; left: 60% }
+    37.5% { top: 25%; left: 80% }
+    50% { top: -50%; left: 60% }
+    75% { top: 100%; left: 20% }
+    87.5% { top: 25%; left: 0}
+    100% { top: -50%; left: 20% }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg) }
+    50% { transform: rotate(180deg) }
+    100% { transform: rotate(360deg) }
+}
